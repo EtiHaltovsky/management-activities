@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- <link rel="stylesheet" href="activities.css"> -->
+  <link rel="shortcut icon" href="assets/סמל.png" type="image/png">
+  <!-- <link rel="stylesheet" href="page.css">  -->
+
+  <link rel="stylesheet" href="design.css">
+
+  <!-- <link rel="stylesheet" href="bootstrap.css">  -->
+  <link rel="stylesheet" href="managerUpdates.css">
+  <script src="script.js"></script>
+  <script src="student.js"></script>
+  <script src="activities.js"></script>
+
+</head>
+
+<body>
+
+  <!-- <div id="back"></div> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <!-- <div class="navbar">
+    <a href="hello.html" class="active"><i class="fa fa-fw fa-user"></i>דף הבית</a>
+    <a href="home2.html"><i class="fa fa-fw fa-home"></i>כניסה</a>
+    <a href="studentDetails.html"><i class="fa fa-fw fa-envelope"></i>הרשמה</a>
+    <a href="information.html"><i class="fa fa-fw fa-search"></i>אודות</a>
+
+  </div> -->
+
+
+  <!-- <ul id="skip_links" tabindex='0'>
+      <li><a href="#nav_panel">ניווט</a></li>
+      <li><a href="#accessibility_btn">נגישות</a></li>
+      <li><a href="#lining_nav">כותרת דף</a></li>
+      <li><a href="#wrap_container">תוכן</a></li>
+      <li><a href="#footer_cont_link">ניוות תחתית</a></li>
+    </ul> -->
+
+  <nav id="nav_panel">
+    <div id="nav_wrap">
+      <div id="logo_side">
+        <a id="logo_imgs" href="/">
+          <img alt="פעילויות סמינר החדש אשדוד" src="assets/חדששש.jpg" id="bigger_logo" />
+
+
+        </a>
+      </div>
+
+      <div id="centarl_nav" class="header-txt">
+
+        <ul class="header-nav">
+          <li><a class="" href="tel:*5058" tabindex="0"><i class="fa fa-phone-square" style="margin:0 5px;"><span
+                  class="invisible_text">טלפון</span></i>0737895034</a></li>
+
+
+          <!-- nav למעלה -->
+
+          <li><a href="hello.html" tabindex="0">לדף הבית</a></li>
+
+          <!-- <li><a href="managerUpdates.html" tabindex="0">לדף קודם</a></li> -->
+
+          <li><a href="activities.html" tabindex="0">לפעילויות</a></li>
+
+          <li><a href="etnachta.html" tabindex="0">לאתנחתות </a></li>
+
+          <li><a href="information.html" tabindex="0">אודות</a></li>
+
+        </ul>
+
+      </div>
+    </div>
+  </nav>
+  <br>
+  <br>
+  <br>
+  <br>
+
+  <br>
+  <br>
+
+  <div class="row">
+    <div class="left" style="background-color:#bbb;">
+      <h2>אפשרויות</h2>
+      <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+
+      <ul id="myMenu">
+        <li><a href="s.html"><input type="button" value="הוספת תלמידה"></a></li>
+        <li><a href="delete.html"><input type="button" value="מחיקת תלמידה"></a></li>
+        <li><a href="excelFile.html"><input type="button" value="הוספת כל התלמידות"></a></li>
+        <li><a href="updateS.html"><input type="button" value="עדכון פרטי תלמידה"></a></li>
+        <li><a href="teacherDetails.html"><input type="button" value="הוספת מורה"></a></li>
+        <li><a href="t.html"><input type="button" value="עדכון פרטי מורה"></a></li>
+        <li><a href="delete.html"><input type="button" value="מחיקת מורה"></a></li>
+        <li><a href="deleteActivity.html"><input type="button" value="מחיקת פעילות"></a></li>
+        <li><a href="etnachtaManager.html"><input type="button" value="הוספת פעילות"></a></li>
+        <li><a href="updateActivity.html"><input type="button" value="עדכון פרטי פעילות"></a></li>
+        <li><a href="selectActivities.html"><input type="button"
+              value="להצגת התלמידות שנרשמו למחנה או לטיול או לשבת מחנה"></a></li>
+              <li style="padding-right: 10px; padding-top: 10px;"><input type="button" value="להצגת כל הפעילויות"        
+                onclick="ShowAllActivities()"></li>
+
+        <li style="padding-right: 10px; padding-top: 10px;"><input type="button" value="להצגת כל התלמידות"        
+            onclick="ShowAllStudents()"></li>
+            <li style="padding-right: 10px; padding-top: 10px;"><input type="button" value="להצגת כל המורות"
+              onclick="ShowAllTeachers()"></li>
+      </ul>
+    </div>
+
+    <div class="right" style="background-color:#ddd;">
+      <!-- <h2>Page Content</h2>
+  <p>Start to type for a specific category inside the search bar to "filter" the search options.</p>
+  <p>Some text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..</p>
+  <p>Some other text..Some text..Some text..Some text..Some text..Some text..Some text..Some text..</p>
+  <p>Some text..</p> -->
+    </div>
+  </div>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <!-- <div id="personal">
+    
+   
+  </div> -->
+
+  <div id="main"></div>
+
+  <!-- <div id="box">
+        <div id="a">
+            <a class="drop-header" href="excelFile.html">הוספת תלמידה</a>
+        </div>
+        <div id="a">
+            <a class="drop-header" href="excelFile.html">עדכון פרטי תלמידה</a> -->
+
+  <!-- </div>
+        <div id="a"> <a class="drop-header" href="etnachtaManager.html">הוספת פעילות</a>
+
+        </div>
+        <div id="a"> <a class="drop-header" href="etnachtaManager.html">עדכון פרטי פעילות</a>
+
+        </div>
+        <div id="a">
+            <a class="drop-header" href="task.html">רשימת מטלות</a>
+
+        </div>
+
+    </div> -->
+
+
+
+
+</body>
+
+</html>

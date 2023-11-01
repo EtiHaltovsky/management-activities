@@ -1,0 +1,505 @@
+
+
+.freeAcc-component{
+    display: inline;
+}
+
+/* start of component style RTL */
+main {
+    direction: rtl;
+  }
+  h1, p {
+    text-align: left;
+    font-family: arial;
+  }
+  
+  .freeAcc-component a, .freeAcc-component button, .freeAcc-component a:hover, .freeAcc-component button:hover, .freeAcc-component a:focus, .freeAcc-component button:focus, button[class^="freeAcc"], button[class^="freeAcc"]:hover, button[class^="freeAcc"]:focus, span.freeAccBtnName, .freeAcc-component span, .freeAcc-component svg {
+      transition: all .3s ease-in;
+  }
+  
+  .freeAcc-component button {
+      cursor: pointer;
+      border: none;
+      background-color: transparent;
+      margin: 0px;
+      padding: 0px;   
+      font-family: Arial,Helvetica Neue,Helvetica,sans-serif; 
+     
+  }
+  
+  button.freeAcc-ButtonType-A {
+      background-color: #000;
+  }
+  
+  .freeAcc-bg-color {
+      background-color: #000;
+  }
+  
+  button.freeAcc-openButton {
+      font-size: 24px;
+      color: #fff;
+      padding: 3px 15px;
+      line-height: 100%;
+      position: fixed;
+      z-index: 2147483645;
+      right: 0;
+      top: 0;
+  }
+  
+  button.freeAcc-openButton:focus {
+      outline: 2px solid red;
+  }
+  
+  button.freeAcc-openButton svg {
+      width: 26px;
+      fill: #fff;
+      margin-left: 6px;
+  }
+  
+  button.freeAcc-openButton:hover > span, button.freeAcc-openButton:hover > svg, button.freeAcc-openButton:focus > span, button.freeAcc-openButton:focus > svg {
+      color: #fff900;
+      fill: #fff900;
+  }
+  
+  
+  button.freeAcc-ButtonType-D {
+      background-color: #dedede;
+      font-size: 20px;
+      width: 100%;
+      padding: 5px;
+      margin: 0px 0px 5px 0px;
+      border: 1px solid #cecece;
+      border-radius: 3px;
+      box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.65);
+  }
+  
+  button.freeAcc-closeButton {
+      color: #ffffff;
+      font-size: 18px;
+      padding: 1px 10px;
+      line-height: 27px;
+      float: left;
+  }
+  
+  button.freeAcc-closeButton span {
+      font-size: 26px;
+      position: relative;
+      top: 4px;
+  }
+  
+  .freeAcc-header-container {
+      width: 300px;
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      min-height: 33px;
+  }
+  
+  .freeAcc-menu {
+      width: 300px;
+  }
+  
+  button.freeAcc-openButton span {
+      position: relative;
+      top: -5px;
+      /* display:none; */
+  }
+  
+  img.freeAcc-openButton-img {
+      width: 30px;
+  }
+  
+  .freeAcc-welcomeYou {
+      color: #ffffff;
+      font-size: 18px;
+      padding: 1px 10px;
+      line-height: 27px;
+      float: right;
+  }
+  
+  .freeAcc-welcomeYou svg {
+      width: 26px;
+      fill: #fff;
+      position: relative;
+      margin-left: 5px;
+      top: 3px;
+  }
+  
+  .freeAcc-welcomeYou span {
+      display: inline-block;
+      position: relative;
+      top: -4px;
+  }
+  
+  .freeAcc-welcomeYou img {
+      position: relative;
+      top: -1px;
+  }
+  
+  .freeAcc-inner {
+      width: 0px;
+      height: 100%;
+      padding: 45px 0px;
+      background-color: #f9f9f9;
+      border: 2px solid #000000;
+      text-align: center;
+      position: fixed;
+      right: 0;
+      top: 0;
+      box-sizing: border-box;
+      box-shadow: 5px 0px 15px 0px rgba(0,0,0,0.75);
+      z-index: 2147483647;
+      overflow: hidden;
+      opacity: 0;
+      transition: all 0.5s ease;
+  }
+  
+  .freeAccOpen {
+      width: 300px;
+      opacity: 1;
+  }
+  
+  .freeAcc-component {
+      font-family: arial;
+  }
+  
+  ul.freeAcc-menuTypeA {
+      margin: 0px;
+      padding: 0px 0px 5px 0px;
+      list-style: none;
+      display: inline-block;
+      border-bottom: 1px solid #c0c0c0;
+      width: 90%;
+  }
+  ul.freeAcc-menuTypeB {
+      margin: 0px;
+      padding: 0px 0px 5px 0px;
+      list-style: none;
+      display: inline-block;
+      width: 90%;
+  }
+  
+  ul.freeAcc-menuTypeA li {
+      padding: 5px 0px;
+      margin: 4px;
+      float: right;
+  }
+  
+  button.freeAcc-ButtonType-C {
+      padding: 5px;
+  }
+  
+  .freeAcc-ButtonType-C svg {
+      width: 50px;
+      height: 40px;
+  }
+  
+  li.freeAcc-borderStyle {
+      border-right: 1px solid #c0c0c0;
+      border-left: 1px solid #c0c0c0;
+  }
+  
+  img.freeAcc-img {
+      width: 40px;
+  }
+  
+  span.freeAcc-spanType-A {
+      font-size: 12px;
+      display: block;
+  }
+  
+  span.freeAcc-spanType-A {
+      font-size: 13px;
+      display: block;
+  }
+  
+  .freeAcc-RTL {
+      text-align: right;
+      direction: rtl;
+  }
+  
+  .freeAccCredit-container {
+      position: absolute;
+      bottom: 0;
+      width: 300px;
+      padding: 0px;
+  }
+  
+  ul.freeAcc-menuTypeC {
+      margin: 0px;
+      padding: 0px;
+      list-style: none;
+      display: inline-block;
+      width: 100%;
+  }
+  
+  button.freeAcc-DisableAll {
+      width: 100%;
+      background-color: #ff3737;
+      color: #fff;
+      font-size: 20px;
+      padding: 10px;
+      position: relative;
+      z-index: 1;
+  }
+  
+  button.freeAcc-DisableAll:hover, button.freeAcc-DisableAll:focus {
+      outline: 3px solid #000;
+      background-color: #ba0000;
+  }
+  
+  button.freeAcc-ButtonType-E {
+      text-align: right;
+      width: 100%;
+      padding: 10px 15px;
+      border-bottom: 2px solid #000;
+      font-size: 16px;
+      background-color: #fff;
+      position: relative;
+  }
+  
+  button.freeAcc-ButtonType-E:hover, button.freeAcc-ButtonType-E:focus {
+      background-color: #353535;
+      color: #fff;
+      outline: 3px solid #000;
+  }
+  
+  span.freeAcc-iconFloat {
+      position: absolute;
+      left: 10px;
+      top: 9px;
+      background-color: #000;
+      color: #fff;
+      width: 26px;
+      height: 26px;
+      text-align: center;
+      border-radius: 50px;
+      font-size: 24px;
+      line-height: 22px;
+  }
+  
+  a.freeAcc-credit {
+      display: block;
+      width: 100%;
+      background-color: #000;
+      margin: 0px;
+      color: #ffffff;
+      padding: 5px 10px;
+      font-size: 14px;
+  }
+  
+  a.freeAcc-credit:hover {
+      text-decoration: underline;
+      color: #fff900;
+  }
+  
+  button.freeAcc-ButtonType-B:hover {
+      color: #fff900;
+  }
+  
+  button.freeAcc-ButtonType-B:focus {
+      outline: 3px dotted #fff;
+      color: #fff900;
+  }
+  
+  button.freeAcc-ButtonType-C:hover {
+      background-color: #eeeeee;
+      outline: 1px solid #cccccc;
+  }
+  
+  button.freeAcc-ButtonType-C:focus {
+      outline: 3px dotted #000;
+      background-color: #eeeeee;
+  }
+  
+  button.freeAcc-ButtonType-D:hover {
+      background-color: #fff;
+  }
+  
+  button.freeAcc-ButtonType-D:focus {
+      outline: 3px solid #000;
+      background-color: #fff;
+  }
+  
+  
+  /* end of component style RTL */
+  
+  /* start of costume elments add to site */
+  
+  span.freeAccBtnName {
+      overflow: hidden;
+      width: 0px;
+      height: 20px;
+      display: block;
+      position: absolute;
+      padding: 0;
+      top: 6px;
+      left: 29px;
+      background-color: #000;
+      z-index: 0;
+      text-align: right;
+      font-size: 14px;
+      font-weight: 100;
+      line-height: 14px;
+      border-radius: 0px 10px 10px 0px;
+      opacity: 0;
+  }
+  
+  span.freeAccBtnName.freeAccShow {
+      padding: 3px 10px;
+      width: 100px;
+      opacity: 1;
+  }
+  
+  svg#freeAccShowSVG, svg#freeAccHideSVG {
+      width: 23px;
+  }
+  
+  svg#freeAccStopSVG {
+      width: 12px;
+  }
+  
+  svg#freeAccPlaySVG {
+      width: 12px;
+      left: 3px;
+  }
+  
+  button.freeAccBtnStyle:hover > svg.freeAccSVG, button.freeAccBtnStyle:focus > svg.freeAccSVG{
+      fill: #fff900;
+  }
+  
+  button.freeAccBtnStyle {
+      position: absolute;
+      z-index: 1;
+      background-color: #000;
+      border: 0px;
+      width: 32px;
+      height: 32px;
+      border-radius: 50px;
+      text-align: center;
+      color: #ffffff;
+      font-size: 16px;
+      line-height: 20px;
+      padding: 0px;
+      margin: 0px;
+  }
+  
+  button.freeAccBtnStyle:hover, button.freeAccBtnStyle:focus {
+      color: #fff900;
+  }
+  
+  button.freeAccVideo {
+      left: 15px;
+      bottom: 15px;
+  }
+  
+  button.freeAccSlider {
+      left: 15px;
+      top: 0px;
+  }
+  
+  button.freeAccLogoSlider {
+      left: 15px;
+      top: -75px;
+  }
+  
+  button.freeAccTeamSlider {
+      left: 15px;
+      top: -76px;
+  }
+  
+  svg.freeAccSVG {
+      fill: #fff;
+      transition: all 0.5s ease-in-out;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      margin: auto;
+  }
+  
+  
+  /* this website spasific costum changes after acc mode */
+  
+  ul.freeAccSliderReplace1, ul.freeAccLogoSliderReplace {
+      list-style: none;
+      padding: 0px;
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      max-width: 1120px;
+      margin: 0px auto;
+  }
+  
+  ul.freeAccTeamSliderReplace {
+      list-style: none;
+      padding: 0px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      max-width: 1120px;
+      margin: 0px auto;
+      
+  }
+  
+  
+  ul.freeAccSliderReplace1 li, ul.freeAccLogoSliderReplace li {
+      max-width: 280px;
+      padding: 0px 15px 15px 0px;
+  }
+  
+  ul.freeAccSliderReplace1 li img {
+      width: 100%;
+  }
+  
+  ul.freeAccSliderReplace1 li h3 {
+      margin: 5px 0px 0px 0px;
+      padding: 0px;
+      line-height: 30px;
+      color: #000;
+      font-size: 22px;
+      font-family: Arial,Helvetica Neue,Helvetica,sans-serif; 
+  }
+  
+  ul.freeAccSliderReplace1 li p {
+      font-size: 14px;
+      line-height: 18px;
+      color: #000000;
+      font-family: Arial,Helvetica Neue,Helvetica,sans-serif; 
+  }
+  
+  ul.freeAccTeamSliderReplace > li > .member h3, ul.freeAccTeamSliderReplace > li > .member > .bottomember, ul.freeAccTeamSliderReplace > li > .member h4 {
+      opacity: 1;
+      font-family: Arial,Helvetica Neue,Helvetica,sans-serif; 
+  }
+  
+  ul.freeAccTeamSliderReplace > li > .member h3 {
+      font-size: 18px;
+  }
+  
+  ul.freeAccTeamSliderReplace > li > .member h4 {
+      font-size: 16px;
+  }
+  
+  
+  @media screen and (max-width: 670px) {
+      button.freeAccVideo {
+          display: none;
+      }
+      
+      ul.freeAccSliderReplace1 {
+          width: 300px;
+      }
+      
+      button.freeAccSlider {
+          left: 45px;
+          top: -50px;
+          z-index: 2;
+          
+      }
+      
+      button.freeAccLogoSlider {
+          left: -15px;
+      }
+  }

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pay.css">
+    <script src="script.js"></script>
+    <script src="student.js"></script>
+
+
+    <link rel="stylesheet" href="pay.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="shortcut icon" href="assets/סמל.png" type="image/png">
+    <link rel="stylesheet" href="hello.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="page.css">
+    <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="teacher.css">
+
+    <div id="back"></div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  
+  
+    <nav id="nav_panel">
+      <div id="nav_wrap">
+        <div id="logo_side">
+          <a id="logo_imgs" href="/">
+            <img alt="פעילויות סמינר החדש אשדוד" src="assets/חדששש.jpg" id="bigger_logo" />
+  
+  
+          </a>
+        </div>
+  
+        <div id="centarl_nav" class="header-txt">
+  
+          <ul class="header-nav">
+            <li><a class="" href="tel:*5058" tabindex="0"><i class="fa fa-phone-square" style="margin:0 5px;">
+                  <span class="invisible_text">טלפון</span></i>0737895034</a></li>
+  
+  
+            <!-- nav למעלה -->
+            <li><a href="hello.html" tabindex="0">לדף הבית</a></li>
+
+            <!-- <li><a href="managerUpdates.html" tabindex="0">לדף קודם</a></li> -->
+
+            <li><a href="activities.html" tabindex="0">לפעילויות</a></li>
+
+            <li><a href="etnachta.html" tabindex="0">לאתנחתות </a></li>
+
+            <li><a href="information.html" tabindex="0">אודות</a></li>
+
+  
+          </ul>
+  
+        </div>
+  
+    </nav>
+  
+  
+</head>
+<body onload="idActivity()">
+
+    <div>
+        <h1 id="h1">לתשלום</h1>
+    </div>
+    <div id="border">
+        <fieldset class="enter">
+            <legend style="font-size: x-large; ">סה"כ לתשלום</legend>
+            <input type="text" class="input-enter">
+        </fieldset>
+
+        <fieldset class="enter">
+            <legend style="direction: rtl; font-size: x-large;">אופן התשלום</legend>
+            <!-- <label for="">אופן התשלום:</label> -->
+            <select name="payment" id="">
+                <option value="">מזומן</option>
+                <option value="">צ'ק</option>
+                <option value="">העברה בנקאית</option>
+            </select>
+        </fieldset>
+
+        <fieldset class="enter">
+            <legend style="font-size: x-large; ">קוד בתיה </legend>
+            <input type="text" class="input-enter">
+        </fieldset>
+ 
+        <div class="ok">
+            <input type="button" value="אישור" id="next" onclick="addStudentToTrip()">
+            <div id="res"></div>
+        </div>
+
+    </div>
+
+</body>
+</html>

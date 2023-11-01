@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="s.css">
+
+
+    <!-- <link rel="stylesheet" href="hello.css"> -->
+  <link rel="stylesheet" href="login.css">
+  <!-- <link rel="stylesheet" href="page.css">
+  <link rel="stylesheet" href="nav.css"> -->
+  <link rel="shortcut icon" href="assets/סמל.png" type="image/png">
+  <link rel="stylesheet" href="design.css">
+</head>
+
+<body>
+    <nav id="nav_panel">
+        <div id="nav_wrap">
+            <div id="logo_side">
+                <a id="logo_imgs" href="/">
+                    <img alt="פעילויות סמינר החדש אשדוד" src="assets/חדששש.jpg" id="bigger_logo" />
+
+
+                </a>
+            </div>
+
+            <div id="centarl_nav" class="header-txt">
+                <ul class="header-nav">
+                    <li><a class="" href="tel:*5058" tabindex="0"><i class="fa fa-phone-square"
+                                style="margin:0 5px;"><span class="invisible_text">טלפון</span></i>0737895034</a></li>
+
+
+                    <!-- nav למעלה -->
+
+                    <li><a href="hello.html" tabindex="0">לדף הבית</a></li>
+
+                    <li><a href="managerUpdates.html" tabindex="0">לדף קודם</a></li>
+
+                    <li><a href="activities.html" tabindex="0">לפעילויות</a></li>
+
+                    <li><a href="etnachta.html" tabindex="0">לאתנחתות </a></li>
+
+                    <li><a href="information.html" tabindex="0">אודות</a></li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container" id="conta">
+        <h1 id="h2">פרטי מורה</h1>
+        <form id="regForm" action="/action_page.php">
+            <div id="male">
+                <div class="space">
+                    <label for="id">תעודת זהות:</label>
+                    <input type="text" class="form-control" id="id" placeholder="תעודת זהות" name="id" required
+                        pattern="[0-9]{9}">
+                </div>
+
+                <div class="space">
+                    <label for="firstName">שם פרטי:</label>
+                    <input type="text" id="firstName" name="firstname" placeholder="שם פרטי" required>
+                </div>
+                <div class="space">
+                    <label for="lastName">שם משפחה:</label>
+                    <input type="text" id="lastName" name="lastname" placeholder="שם משפחה" required>
+                </div>
+
+                <div class="space">
+                    <label for="phone">מספר טלפון:</label>
+                    <input type="text" id="phone" name="phonenumber" required placeholder="מספר טלפון">
+                </div>
+                <div class="space">
+                    <label for="address">כתובת:</label>
+                    <input type="text" id="address" name="address" placeholder="כתובת" required>
+                </div>
+
+                <div class="space">
+                    <label for="password">הקישי סיסמא</label>
+                    <input type="password" id="password" name="password" placeholder="הקישי סיסמא">
+                </div>
+                <br>
+                <div class="space">
+                    <label for="email">כתובת מייל:</label>
+                    <input type="email" name="mail" id="email" placeholder="כתובת מייל">
+                </div>
+
+                <div class="space">
+                    <label for="sister">מחנכת:</label>
+                    <input type="checkbox" id="checkmarksister">
+                </div>
+            </div>
+            <br>
+            <br>
+
+
+            <div class="parent">
+                <div class="div1">
+                    <button type="reset" value="ביטול" class="re">ביטול</button>
+                </div>
+                <div class="div2"> <button type="button" value="שליחה" onclick="addTeacher()" class="re">שליחה</button>
+                </div>
+                <br>
+                <div class="div3"> <button type="button" value="לעדכון פרטים" onclick="changeTeacherDetails()"
+                        class="re">לעדכון </button>
+                </div>
+            </div>
+
+            <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SchoolDBModelStoreContainer" CdmEntityContainer="SchoolDBEntities">
+    <EntitySetMapping Name="Activities">
+      <EntityTypeMapping TypeName="SchoolDBModel.Activity">
+        <MappingFragment StoreEntitySet="Activity">
+          <ScalarProperty Name="ActivityId" ColumnName="ActivityId" />
+          <ScalarProperty Name="ActivitiesName" ColumnName="ActivitiesName" />
+          <ScalarProperty Name="ActivitiesPlace" ColumnName="ActivitiesPlace" />
+          <ScalarProperty Name="ActivitiesDate" ColumnName="ActivitiesDate" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Camps">
+      <EntityTypeMapping TypeName="SchoolDBModel.Camp">
+        <MappingFragment StoreEntitySet="Camp">
+          <ScalarProperty Name="CampId" ColumnName="CampId" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="People">
+      <EntityTypeMapping TypeName="SchoolDBModel.Person">
+        <MappingFragment StoreEntitySet="Person">
+          <ScalarProperty Name="PersonId" ColumnName="PersonId" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Phone" ColumnName="Phone" />
+          <ScalarProperty Name="Role" ColumnName="Role" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ShabessCamps">
+      <EntityTypeMapping TypeName="SchoolDBModel.ShabessCamp">
+        <MappingFragment StoreEntitySet="ShabessCamp">
+          <ScalarProperty Name="shabbesCampId" ColumnName="shabbesCampId" />
+          <ScalarProperty Name="TimeOfPrayInBeitKneset" ColumnName="TimeOfPrayInBeitKneset" />
+          <ScalarProperty Name="Lecturers" ColumnName="Lecturers" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Students">
+      <EntityTypeMapping TypeName="SchoolDBModel.Student">
+        <MappingFragment StoreEntitySet="Students">
+          <ScalarProperty Name="Age" ColumnName="Age" />
+          <ScalarProperty Name="FatherName" ColumnName="FatherName" />
+          <ScalarProperty Name="MotherName" ColumnName="MotherName" />
+          <ScalarProperty Name="ClassNum" ColumnName="ClassNum" />
+          <ScalarProperty Name="Sister" ColumnName="Sister" />
+          <ScalarProperty Name="Pharm" ColumnName="Pharm" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StudentToActivities">
+      <EntityTypeMapping TypeName="SchoolDBModel.StudentToActivity">
+        <MappingFragment StoreEntitySet="StudentToActivities">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ActivitiesId" ColumnName="ActivitiesId" />
+          <ScalarProperty Name="StudentId" ColumnName="StudentId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Teachers">
+      <EntityTypeMapping TypeName="SchoolDBModel.Teacher">
+        <MappingFragment StoreEntitySet="Teacher">
+          <ScalarProperty Name="Educator" ColumnName="Educator" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TeachersToActivities">
+      <EntityTypeMapping TypeName="SchoolDBModel.TeachersToActivity">
+        <MappingFragment StoreEntitySet="TeachersToActivities">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="TeacherId" ColumnName="TeacherId" />
+          <ScalarProperty Name="ActivitiesId" ColumnName="ActivitiesId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Trips">
+      <EntityTypeMapping TypeName="SchoolDBModel.Trip">
+        <MappingFragment StoreEntitySet="Trip">
+          <ScalarProperty Name="TripId" ColumnName="TripId" />
+          <ScalarProperty Name="Guide" ColumnName="Guide" />
+          <ScalarProperty Name="DurationOfTheTrip" ColumnName="DurationOfTheTrip" />
+          <ScalarProperty Name="Sites" ColumnName="Sites" />
+          <ScalarProperty Name="Buses" ColumnName="Buses" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

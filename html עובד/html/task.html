@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="task.css">
+  <link rel="stylesheet" href="nav.css">
+  <link rel="shortcut icon" href="assets/סמל.png" type="image/png">
+
+</head>
+
+<body>
+
+  <div class="navbar">
+    <a href="hello.html" class="active"><i class="fa fa-fw fa-user"></i>דף הבית</a>
+    <a href="home2.html"><i class="fa fa-fw fa-home"></i>כניסה</a>
+    <a href="studentDetails.html"><i class="fa fa-fw fa-envelope"></i>הרשמה</a>
+    <a href="information.html"><i class="fa fa-fw fa-search"></i>אודות</a>
+
+  </div>
+
+  <div id="myDIV" class="header">
+    <h1 style="color: black;">רשימת מטלות</h1>
+    <input type="text" id="myInput" placeholder="משימה חדשה">
+    <span onclick="newElement()" class="addBtn">הוסף</span>
+  </div>
+
+  <ul id="myUL">
+    <li class="t">לארגן אוטובוסים</li>
+    <li class="t checked">להנפיק חשבוניות</li>
+    <li class="t">לסדר חדרים</li>
+    <li class="t">להזמין קייטרינג</li>
+    <li class="t">להדפיס תוכניה</li>
+    <li class="t checked">לסגור אטרקציה</li>
+  </ul>
+</body>
+<script src="script.js"></script>
+
+</html>

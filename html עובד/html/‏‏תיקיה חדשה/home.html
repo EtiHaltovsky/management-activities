@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="page.css">
+    <link rel="shortcut icon" href="assets/סמל.png" type="image/png">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="login.css">
+
+</head>
+
+<body>
+
+    <header>
+        <h1><i>פעילות חברתית תיכון "החדש" אשדוד</i> </h1>
+
+    </header>
+
+  
+
+    <!-- <h1 style="text-align: center;">:בחר משתמש</h1> -->
+
+    <!-- שלח את התלמידה לכאן בבדיקת הסיסמה -->
+    <!-- רכזת -->
+    <div id="main">
+        <a href="manager.html">
+            <button>
+                <div id="btn">רכזת</div>
+            </button>
+        </a>
+        <div id="id01" class="modal">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                title="Close Modal">&times;</span>
+
+            <!-- Modal Content -->
+            <form class="modal-content animate">
+                <div class="imgcontainer">
+                    <img src="assets/סמל.png" style="width: 10%; height: 15%;" alt="Avatar" class="avatar">
+                </div>
+
+                <div class="container">
+                    <label for="uname"><b>שם משתמש</b></label>
+                    <input id="uname" type="text" style="direction: rtl;" placeholder="הכנס שם משתמש" name="uname"
+                        required>
+
+                    <label for="pass"><b>סיסמא</b></label>
+                    <input id="pass" type="password" style="direction: rtl;" placeholder="הכנס סיסמא" name="psw"
+                        required id="pass">
+
+                    <button type="button" onclick="sendRequestStudent()">כניסה</button>
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+
+                </div>
+                <div id="res"></div>
+                <div class="container" style="background-color:#f1f1f1">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                        class="cancelbtn btn">Cancel</button>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+            </form>
+        </div>
+
+        <!-- מורה -->
+        <a href="teacher.html">
+            <button>
+                <div id="btn">מורה</div>
+            </button>
+        </a>
+        <div id="id01" class="modal">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                title="Close Modal">&times;</span>
+
+            <!-- Modal Content -->
+            <form class="modal-content animate">
+                <div class="imgcontainer">
+                    <img src="assets/סמל.png" style="width: 10%; height: 15%;" alt="Avatar" class="avatar">
+                </div>
+
+                <div class="container">
+                    <label for="uname"><b>שם משתמש</b></label>
+                    <input id="uname" type="text" style="direction: rtl;" placeholder="הכנס שם משתמש" name="uname"
+                        required>
+
+                    <label for="pass"><b>סיסמא</b></label>
+                    <input id="pass" type="password" style="direction: rtl;" placeholder="הכנס סיסמא" name="psw"
+                        required id="pass">
+
+                    <button type="button" onclick="sendRequestManager()">כניסה</button>
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+
+                </div>
+                <div id="res"></div>
+                <div class="container" style="background-color:#f1f1f1">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                        class="cancelbtn btn">Cancel</button>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+            </form>
+        </div>
+
+        <!-- תלמידה -->
+        <a>
+            <button onclick="document.getElementById('id01').style.display='block'">
+                <div id="btn">תלמידה</div>
+            </button>
+        </a>
+        <div id="id01" class="modal">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                title="Close Modal">&times;</span>
+
+            <!-- Modal Content -->
+            <form class="modal-content animate">
+                <div class="imgcontainer">
+                    <img src="assets/סמל.png" style="width: 10%; height: 15%;" alt="Avatar" class="avatar">
+                </div>
+
+                <div class="container">
+                    <label for="uname"><b>שם משתמש</b></label>
+                    <input id="uname" type="text" style="direction: rtl;" placeholder="הכנס שם משתמש" name="uname"
+                        required>
+
+                    <label for="pass"><b>סיסמא</b></label>
+                    <input id="pass" type="password" style="direction: rtl;" placeholder="הכנס סיסמא" name="psw"
+                        required id="pass">
+
+                    <button type="button" onclick="sendRequestStudent()">כניסה</button>
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+
+                </div>
+                <div id="res"></div>
+                <div class="container" style="background-color:#f1f1f1">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                        class="cancelbtn btn">Cancel</button>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+            </form>
+        </div>
+
+    </div>
+  
+    <figure id="fix1">
+        <a href="hello.html">
+            <img src="assets/House.svg">
+        </a>
+    </figure>
+
+
+
+    <!-- <a href="hello.html" class="active"><i class="fa fa-fw fa-user"></i>דף הבית</a> -->
+
+    <footer>
+        <h3> &COPY; אתי הלטובסקי &COPY;</h3>
+    </footer>
+
+</body>
+
+</html>

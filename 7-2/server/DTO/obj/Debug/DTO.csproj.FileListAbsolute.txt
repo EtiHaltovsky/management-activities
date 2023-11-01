@@ -1,0 +1,269 @@
+E:\שנה ב\המורה לירז פרץ\server\DTO\bin\Debug\DTO.dll
+E:\שנה ב\המורה לירז פרץ\server\DTO\bin\Debug\DTO.pdb
+E:\שנה ב\המורה לירז פרץ\server\DTO\bin\Debug\DAL.dll
+E:\שנה ב\המורה לירז פרץ\server\DTO\bin\Debug\DAL.pdb
+E:\שנה ב\המורה לירז פרץ\server\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+E:\שנה ב\המורה לירז פרץ\server\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+E:\שנה ב\המורה לירז פרץ\server\DTO\obj\Debug\DTO.csproj.CopyComplete
+E:\שנה ב\המורה לירז פרץ\server\DTO\obj\Debug\DTO.dll
+E:\שנה ב\המורה לירז פרץ\server\DTO\obj\Debug\DTO.pdb
+F:\שנה ב\המורה לירז פרץ\server\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+F:\שנה ב\המורה לירז פרץ\server\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+F:\שנה ב\המורה לירז פרץ\server\DTO\obj\Debug\DTO.dll
+F:\שנה ב\המורה לירז פרץ\server\DTO\obj\Debug\DTO.pdb
+F:\שנה ב\המורה לירז פרץ\server\DTO\bin\Debug\DTO.dll
+F:\שנה ב\המורה לירז פרץ\server\DTO\bin\Debug\DTO.pdb
+F:\שנה ב\המורה לירז פרץ\server\DTO\bin\Debug\DAL.dll
+F:\שנה ב\המורה לירז פרץ\server\DTO\bin\Debug\DAL.pdb
+F:\שנה ב\המורה לירז פרץ\server\DTO\obj\Debug\DTO.csproj.CopyComplete
+C:\Users\Comp13\Documents\server\DTO\bin\Debug\DTO.dll
+C:\Users\Comp13\Documents\server\DTO\bin\Debug\DTO.pdb
+C:\Users\Comp13\Documents\server\DTO\bin\Debug\DAL.dll
+C:\Users\Comp13\Documents\server\DTO\bin\Debug\DAL.pdb
+C:\Users\Comp13\Documents\server\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+C:\Users\Comp13\Documents\server\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\Comp13\Documents\server\DTO\obj\Debug\DTO.csproj.CopyComplete
+C:\Users\Comp13\Documents\server\DTO\obj\Debug\DTO.dll
+C:\Users\Comp13\Documents\server\DTO\obj\Debug\DTO.pdb
+E:\c#פרויקט מעודכן\server\DTO\bin\Debug\DTO.dll
+E:\c#פרויקט מעודכן\server\DTO\bin\Debug\DTO.pdb
+E:\c#פרויקט מעודכן\server\DTO\bin\Debug\DAL.dll
+E:\c#פרויקט מעודכן\server\DTO\bin\Debug\DAL.pdb
+E:\c#פרויקט מעודכן\server\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+E:\c#פרויקט מעודכן\server\DTO\obj\Debug\DTO.csproj.CopyComplete
+E:\c#פרויקט מעודכן\server\DTO\obj\Debug\DTO.dll
+E:\c#פרויקט מעודכן\server\DTO\obj\Debug\DTO.pdb
+E:\c#פרויקט מעודכן\server\DTO\bin\Debug\EntityFramework.dll
+E:\c#פרויקט מעודכן\server\DTO\bin\Debug\DAL.dll.config
+E:\c#פרויקט מעודכן\server\DTO\bin\Debug\EntityFramework.xml
+E:\c#פרויקט מעודכן\server\DTO\bin\Debug\es\EntityFramework.resources.dll
+E:\c#פרויקט מעודכן\server\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+D:\c#פרויקט מעודכן\server\DTO\bin\Debug\DTO.dll
+D:\c#פרויקט מעודכן\server\DTO\bin\Debug\DTO.pdb
+D:\c#פרויקט מעודכן\server\DTO\bin\Debug\DAL.dll
+D:\c#פרויקט מעודכן\server\DTO\bin\Debug\EntityFramework.dll
+D:\c#פרויקט מעודכן\server\DTO\bin\Debug\DAL.pdb
+D:\c#פרויקט מעודכן\server\DTO\bin\Debug\DAL.dll.config
+D:\c#פרויקט מעודכן\server\DTO\bin\Debug\EntityFramework.xml
+D:\c#פרויקט מעודכן\server\DTO\bin\Debug\es\EntityFramework.resources.dll
+D:\c#פרויקט מעודכן\server\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+D:\c#פרויקט מעודכן\server\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\c#פרויקט מעודכן\server\DTO\obj\Debug\DTO.csproj.CopyComplete
+D:\c#פרויקט מעודכן\server\DTO\obj\Debug\DTO.dll
+D:\c#פרויקט מעודכן\server\DTO\obj\Debug\DTO.pdb
+E:\c#+db עובד\c#פרויקט מעודכן\server\DTO\bin\Debug\DTO.dll
+E:\c#+db עובד\c#פרויקט מעודכן\server\DTO\bin\Debug\DTO.pdb
+E:\c#+db עובד\c#פרויקט מעודכן\server\DTO\bin\Debug\DAL.dll
+E:\c#+db עובד\c#פרויקט מעודכן\server\DTO\bin\Debug\EntityFramework.dll
+E:\c#+db עובד\c#פרויקט מעודכן\server\DTO\bin\Debug\DAL.pdb
+E:\c#+db עובד\c#פרויקט מעודכן\server\DTO\bin\Debug\DAL.dll.config
+E:\c#+db עובד\c#פרויקט מעודכן\server\DTO\bin\Debug\EntityFramework.xml
+E:\c#+db עובד\c#פרויקט מעודכן\server\DTO\bin\Debug\es\EntityFramework.resources.dll
+E:\c#+db עובד\c#פרויקט מעודכן\server\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+E:\c#+db עובד\c#פרויקט מעודכן\server\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+E:\c#+db עובד\c#פרויקט מעודכן\server\DTO\obj\Debug\DTO.csproj.CopyComplete
+E:\c#+db עובד\c#פרויקט מעודכן\server\DTO\obj\Debug\DTO.dll
+E:\c#+db עובד\c#פרויקט מעודכן\server\DTO\obj\Debug\DTO.pdb
+C:\Users\Comp13\Music\c#+db עובד\c#פרויקט מעודכן\server\DTO\bin\Debug\DTO.dll
+C:\Users\Comp13\Music\c#+db עובד\c#פרויקט מעודכן\server\DTO\bin\Debug\DTO.pdb
+C:\Users\Comp13\Music\c#+db עובד\c#פרויקט מעודכן\server\DTO\bin\Debug\DAL.dll
+C:\Users\Comp13\Music\c#+db עובד\c#פרויקט מעודכן\server\DTO\bin\Debug\EntityFramework.dll
+C:\Users\Comp13\Music\c#+db עובד\c#פרויקט מעודכן\server\DTO\bin\Debug\DAL.pdb
+C:\Users\Comp13\Music\c#+db עובד\c#פרויקט מעודכן\server\DTO\bin\Debug\DAL.dll.config
+C:\Users\Comp13\Music\c#+db עובד\c#פרויקט מעודכן\server\DTO\bin\Debug\EntityFramework.xml
+C:\Users\Comp13\Music\c#+db עובד\c#פרויקט מעודכן\server\DTO\bin\Debug\es\EntityFramework.resources.dll
+C:\Users\Comp13\Music\c#+db עובד\c#פרויקט מעודכן\server\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+C:\Users\Comp13\Music\c#+db עובד\c#פרויקט מעודכן\server\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\Comp13\Music\c#+db עובד\c#פרויקט מעודכן\server\DTO\obj\Debug\DTO.csproj.CopyComplete
+C:\Users\Comp13\Music\c#+db עובד\c#פרויקט מעודכן\server\DTO\obj\Debug\DTO.dll
+C:\Users\Comp13\Music\c#+db עובד\c#פרויקט מעודכן\server\DTO\obj\Debug\DTO.pdb
+E:\04,01,2023\c#+db עובד\c#פרויקט מעודכן\server\DTO\bin\Debug\DTO.dll
+E:\04,01,2023\c#+db עובד\c#פרויקט מעודכן\server\DTO\bin\Debug\DTO.pdb
+E:\04,01,2023\c#+db עובד\c#פרויקט מעודכן\server\DTO\bin\Debug\DAL.dll
+E:\04,01,2023\c#+db עובד\c#פרויקט מעודכן\server\DTO\bin\Debug\EntityFramework.dll
+E:\04,01,2023\c#+db עובד\c#פרויקט מעודכן\server\DTO\bin\Debug\DAL.pdb
+E:\04,01,2023\c#+db עובד\c#פרויקט מעודכן\server\DTO\bin\Debug\DAL.dll.config
+E:\04,01,2023\c#+db עובד\c#פרויקט מעודכן\server\DTO\bin\Debug\EntityFramework.xml
+E:\04,01,2023\c#+db עובד\c#פרויקט מעודכן\server\DTO\bin\Debug\es\EntityFramework.resources.dll
+E:\04,01,2023\c#+db עובד\c#פרויקט מעודכן\server\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+E:\04,01,2023\c#+db עובד\c#פרויקט מעודכן\server\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+E:\04,01,2023\c#+db עובד\c#פרויקט מעודכן\server\DTO\obj\Debug\DTO.csproj.CopyComplete
+E:\04,01,2023\c#+db עובד\c#פרויקט מעודכן\server\DTO\obj\Debug\DTO.dll
+E:\04,01,2023\c#+db עובד\c#פרויקט מעודכן\server\DTO\obj\Debug\DTO.pdb
+C:\Users\Comp13\Documents\server\DTO\bin\Debug\EntityFramework.dll
+C:\Users\Comp13\Documents\server\DTO\bin\Debug\DAL.dll.config
+C:\Users\Comp13\Documents\server\DTO\bin\Debug\EntityFramework.xml
+C:\Users\Comp13\Documents\server\DTO\bin\Debug\es\EntityFramework.resources.dll
+C:\Users\This_user\Videos\10,01,2023 ערב\server\DTO\bin\Debug\DTO.dll
+C:\Users\This_user\Videos\10,01,2023 ערב\server\DTO\bin\Debug\DTO.pdb
+C:\Users\This_user\Videos\10,01,2023 ערב\server\DTO\bin\Debug\DAL.dll
+C:\Users\This_user\Videos\10,01,2023 ערב\server\DTO\bin\Debug\EntityFramework.dll
+C:\Users\This_user\Videos\10,01,2023 ערב\server\DTO\bin\Debug\DAL.pdb
+C:\Users\This_user\Videos\10,01,2023 ערב\server\DTO\bin\Debug\DAL.dll.config
+C:\Users\This_user\Videos\10,01,2023 ערב\server\DTO\bin\Debug\EntityFramework.xml
+C:\Users\This_user\Videos\10,01,2023 ערב\server\DTO\bin\Debug\es\EntityFramework.resources.dll
+C:\Users\This_user\Videos\10,01,2023 ערב\server\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+C:\Users\This_user\Videos\10,01,2023 ערב\server\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\This_user\Videos\10,01,2023 ערב\server\DTO\obj\Debug\DTO.csproj.CopyComplete
+C:\Users\This_user\Videos\10,01,2023 ערב\server\DTO\obj\Debug\DTO.dll
+C:\Users\This_user\Videos\10,01,2023 ערב\server\DTO\obj\Debug\DTO.pdb
+E:\10,01,2023 ערב\server\DTO\bin\Debug\DTO.dll
+E:\10,01,2023 ערב\server\DTO\bin\Debug\DTO.pdb
+E:\10,01,2023 ערב\server\DTO\bin\Debug\DAL.dll
+E:\10,01,2023 ערב\server\DTO\bin\Debug\EntityFramework.dll
+E:\10,01,2023 ערב\server\DTO\bin\Debug\DAL.pdb
+E:\10,01,2023 ערב\server\DTO\bin\Debug\DAL.dll.config
+E:\10,01,2023 ערב\server\DTO\bin\Debug\EntityFramework.xml
+E:\10,01,2023 ערב\server\DTO\bin\Debug\es\EntityFramework.resources.dll
+E:\10,01,2023 ערב\server\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+E:\10,01,2023 ערב\server\DTO\obj\Debug\DTO.csproj.CopyComplete
+E:\10,01,2023 ערב\server\DTO\obj\Debug\DTO.dll
+E:\10,01,2023 ערב\server\DTO\obj\Debug\DTO.pdb
+E:\10,01,2023 ערב\server\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+C:\Users\This_user\Downloads\server\DTO\bin\Debug\DTO.dll
+C:\Users\This_user\Downloads\server\DTO\bin\Debug\DTO.pdb
+C:\Users\This_user\Downloads\server\DTO\bin\Debug\DAL.dll
+C:\Users\This_user\Downloads\server\DTO\bin\Debug\EntityFramework.dll
+C:\Users\This_user\Downloads\server\DTO\bin\Debug\DAL.pdb
+C:\Users\This_user\Downloads\server\DTO\bin\Debug\DAL.dll.config
+C:\Users\This_user\Downloads\server\DTO\bin\Debug\EntityFramework.xml
+C:\Users\This_user\Downloads\server\DTO\bin\Debug\es\EntityFramework.resources.dll
+C:\Users\This_user\Downloads\server\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+C:\Users\This_user\Downloads\server\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\This_user\Downloads\server\DTO\obj\Debug\DTO.csproj.CopyComplete
+C:\Users\This_user\Downloads\server\DTO\obj\Debug\DTO.dll
+C:\Users\This_user\Downloads\server\DTO\obj\Debug\DTO.pdb
+C:\Users\Comp13\Music\16,01,2023\server\DTO\bin\Debug\DTO.dll
+C:\Users\Comp13\Music\16,01,2023\server\DTO\bin\Debug\DTO.pdb
+C:\Users\Comp13\Music\16,01,2023\server\DTO\bin\Debug\DAL.dll
+C:\Users\Comp13\Music\16,01,2023\server\DTO\bin\Debug\EntityFramework.dll
+C:\Users\Comp13\Music\16,01,2023\server\DTO\bin\Debug\DAL.pdb
+C:\Users\Comp13\Music\16,01,2023\server\DTO\bin\Debug\DAL.dll.config
+C:\Users\Comp13\Music\16,01,2023\server\DTO\bin\Debug\EntityFramework.xml
+C:\Users\Comp13\Music\16,01,2023\server\DTO\bin\Debug\es\EntityFramework.resources.dll
+C:\Users\Comp13\Music\16,01,2023\server\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+C:\Users\Comp13\Music\16,01,2023\server\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\Comp13\Music\16,01,2023\server\DTO\obj\Debug\DTO.csproj.CopyComplete
+C:\Users\Comp13\Music\16,01,2023\server\DTO\obj\Debug\DTO.dll
+C:\Users\Comp13\Music\16,01,2023\server\DTO\obj\Debug\DTO.pdb
+E:\16,01,2023\server\DTO\bin\Debug\DTO.dll
+E:\16,01,2023\server\DTO\bin\Debug\DTO.pdb
+E:\16,01,2023\server\DTO\bin\Debug\DAL.dll
+E:\16,01,2023\server\DTO\bin\Debug\EntityFramework.dll
+E:\16,01,2023\server\DTO\bin\Debug\DAL.pdb
+E:\16,01,2023\server\DTO\bin\Debug\DAL.dll.config
+E:\16,01,2023\server\DTO\bin\Debug\EntityFramework.xml
+E:\16,01,2023\server\DTO\bin\Debug\es\EntityFramework.resources.dll
+E:\16,01,2023\server\DTO\obj\Debug\DTO.csprojAssemblyReference.cache
+E:\16,01,2023\server\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+E:\16,01,2023\server\DTO\obj\Debug\DTO.csproj.CopyComplete
+E:\16,01,2023\server\DTO\obj\Debug\DTO.dll
+E:\16,01,2023\server\DTO\obj\Debug\DTO.pdb
+D:\16,01,2023\server\DTO\bin\Debug\DTO.dll
+D:\16,01,2023\server\DTO\bin\Debug\DTO.pdb
+D:\16,01,2023\server\DTO\bin\Debug\DAL.dll
+D:\16,01,2023\server\DTO\bin\Debug\EntityFramework.dll
+D:\16,01,2023\server\DTO\bin\Debug\DAL.pdb
+D:\16,01,2023\server\DTO\bin\Debug\DAL.dll.config
+D:\16,01,2023\server\DTO\bin\Debug\EntityFramework.xml
+D:\16,01,2023\server\DTO\bin\Debug\es\EntityFramework.resources.dll
+D:\16,01,2023\server\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+D:\16,01,2023\server\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\16,01,2023\server\DTO\obj\Debug\DTO.csproj.CopyComplete
+D:\16,01,2023\server\DTO\obj\Debug\DTO.dll
+D:\16,01,2023\server\DTO\obj\Debug\DTO.pdb
+C:\Users\Comp13\Downloads\31,01,2023\server\DTO\bin\Debug\DTO.dll
+C:\Users\Comp13\Downloads\31,01,2023\server\DTO\bin\Debug\DTO.pdb
+C:\Users\Comp13\Downloads\31,01,2023\server\DTO\bin\Debug\DAL.dll
+C:\Users\Comp13\Downloads\31,01,2023\server\DTO\bin\Debug\EntityFramework.dll
+C:\Users\Comp13\Downloads\31,01,2023\server\DTO\bin\Debug\DAL.pdb
+C:\Users\Comp13\Downloads\31,01,2023\server\DTO\bin\Debug\DAL.dll.config
+C:\Users\Comp13\Downloads\31,01,2023\server\DTO\bin\Debug\EntityFramework.xml
+C:\Users\Comp13\Downloads\31,01,2023\server\DTO\bin\Debug\es\EntityFramework.resources.dll
+C:\Users\Comp13\Downloads\31,01,2023\server\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+C:\Users\Comp13\Downloads\31,01,2023\server\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\Comp13\Downloads\31,01,2023\server\DTO\obj\Debug\DTO.csproj.CopyComplete
+C:\Users\Comp13\Downloads\31,01,2023\server\DTO\obj\Debug\DTO.dll
+C:\Users\Comp13\Downloads\31,01,2023\server\DTO\obj\Debug\DTO.pdb
+E:\‏‏תיקיה חדשה\31,01,2023\server\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+E:\‏‏תיקיה חדשה\31,01,2023\server\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+E:\‏‏תיקיה חדשה\31,01,2023\server\DTO\obj\Debug\DTO.dll
+E:\‏‏תיקיה חדשה\31,01,2023\server\DTO\obj\Debug\DTO.pdb
+D:\31,01,2023\server\DTO\bin\Debug\DTO.dll
+D:\31,01,2023\server\DTO\bin\Debug\DTO.pdb
+D:\31,01,2023\server\DTO\bin\Debug\DAL.dll
+D:\31,01,2023\server\DTO\bin\Debug\EntityFramework.dll
+D:\31,01,2023\server\DTO\bin\Debug\DAL.pdb
+D:\31,01,2023\server\DTO\bin\Debug\DAL.dll.config
+D:\31,01,2023\server\DTO\bin\Debug\EntityFramework.xml
+D:\31,01,2023\server\DTO\bin\Debug\es\EntityFramework.resources.dll
+D:\31,01,2023\server\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+D:\31,01,2023\server\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\31,01,2023\server\DTO\obj\Debug\DTO.csproj.CopyComplete
+D:\31,01,2023\server\DTO\obj\Debug\DTO.dll
+D:\31,01,2023\server\DTO\obj\Debug\DTO.pdb
+E:\31,01,2023\server\DTO\bin\Debug\DTO.dll
+E:\31,01,2023\server\DTO\bin\Debug\DTO.pdb
+E:\31,01,2023\server\DTO\bin\Debug\DAL.dll
+E:\31,01,2023\server\DTO\bin\Debug\EntityFramework.dll
+E:\31,01,2023\server\DTO\bin\Debug\DAL.pdb
+E:\31,01,2023\server\DTO\bin\Debug\DAL.dll.config
+E:\31,01,2023\server\DTO\bin\Debug\EntityFramework.xml
+E:\31,01,2023\server\DTO\bin\Debug\es\EntityFramework.resources.dll
+E:\31,01,2023\server\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+E:\31,01,2023\server\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+E:\31,01,2023\server\DTO\obj\Debug\DTO.csproj.CopyComplete
+E:\31,01,2023\server\DTO\obj\Debug\DTO.dll
+E:\31,01,2023\server\DTO\obj\Debug\DTO.pdb
+C:\Users\Comp13\Pictures\server\DTO\bin\Debug\DTO.dll
+C:\Users\Comp13\Pictures\server\DTO\bin\Debug\DTO.pdb
+C:\Users\Comp13\Pictures\server\DTO\bin\Debug\DAL.dll
+C:\Users\Comp13\Pictures\server\DTO\bin\Debug\EntityFramework.dll
+C:\Users\Comp13\Pictures\server\DTO\bin\Debug\DAL.pdb
+C:\Users\Comp13\Pictures\server\DTO\bin\Debug\DAL.dll.config
+C:\Users\Comp13\Pictures\server\DTO\bin\Debug\EntityFramework.xml
+C:\Users\Comp13\Pictures\server\DTO\bin\Debug\es\EntityFramework.resources.dll
+C:\Users\Comp13\Pictures\server\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+C:\Users\Comp13\Pictures\server\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+C:\Users\Comp13\Pictures\server\DTO\obj\Debug\DTO.csproj.CopyComplete
+C:\Users\Comp13\Pictures\server\DTO\obj\Debug\DTO.dll
+C:\Users\Comp13\Pictures\server\DTO\obj\Debug\DTO.pdb
+E:\7-2\server\DTO\bin\Debug\DTO.dll
+E:\7-2\server\DTO\bin\Debug\DTO.pdb
+E:\7-2\server\DTO\bin\Debug\DAL.dll
+E:\7-2\server\DTO\bin\Debug\EntityFramework.dll
+E:\7-2\server\DTO\bin\Debug\DAL.pdb
+E:\7-2\server\DTO\bin\Debug\DAL.dll.config
+E:\7-2\server\DTO\bin\Debug\EntityFramework.xml
+E:\7-2\server\DTO\bin\Debug\es\EntityFramework.resources.dll
+E:\7-2\server\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+E:\7-2\server\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+E:\7-2\server\DTO\obj\Debug\DTO.csproj.CopyComplete
+E:\7-2\server\DTO\obj\Debug\DTO.dll
+E:\7-2\server\DTO\obj\Debug\DTO.pdb
+D:\7-2\server\DTO\bin\Debug\DTO.dll
+D:\7-2\server\DTO\bin\Debug\DTO.pdb
+D:\7-2\server\DTO\bin\Debug\DAL.dll
+D:\7-2\server\DTO\bin\Debug\EntityFramework.dll
+D:\7-2\server\DTO\bin\Debug\DAL.pdb
+D:\7-2\server\DTO\bin\Debug\DAL.dll.config
+D:\7-2\server\DTO\bin\Debug\EntityFramework.xml
+D:\7-2\server\DTO\bin\Debug\es\EntityFramework.resources.dll
+D:\7-2\server\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+D:\7-2\server\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\7-2\server\DTO\obj\Debug\DTO.csproj.CopyComplete
+D:\7-2\server\DTO\obj\Debug\DTO.dll
+D:\7-2\server\DTO\obj\Debug\DTO.pdb
+D:\סופייייייייייייייייי\7-2\server\DTO\bin\Debug\DTO.dll
+D:\סופייייייייייייייייי\7-2\server\DTO\bin\Debug\DTO.pdb
+D:\סופייייייייייייייייי\7-2\server\DTO\bin\Debug\DAL.dll
+D:\סופייייייייייייייייי\7-2\server\DTO\bin\Debug\EntityFramework.dll
+D:\סופייייייייייייייייי\7-2\server\DTO\bin\Debug\DAL.pdb
+D:\סופייייייייייייייייי\7-2\server\DTO\bin\Debug\DAL.dll.config
+D:\סופייייייייייייייייי\7-2\server\DTO\bin\Debug\EntityFramework.xml
+D:\סופייייייייייייייייי\7-2\server\DTO\bin\Debug\es\EntityFramework.resources.dll
+D:\סופייייייייייייייייי\7-2\server\DTO\obj\Debug\DTO.csproj.AssemblyReference.cache
+D:\סופייייייייייייייייי\7-2\server\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+D:\סופייייייייייייייייי\7-2\server\DTO\obj\Debug\DTO.csproj.CopyComplete
+D:\סופייייייייייייייייי\7-2\server\DTO\obj\Debug\DTO.dll
+D:\סופייייייייייייייייי\7-2\server\DTO\obj\Debug\DTO.pdb

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>אודות</title>
+  <link rel="stylesheet" href="information.css">
+
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="hello.css">
+  <link rel="shortcut icon" href="assets/סמל.png" type="image/png">
+  <link rel="stylesheet" href="design.css">
+  <link rel="stylesheet" href="h.css">
+  <link rel="stylesheet" href="login.css">
+
+  <script src="h.js"></script>
+
+
+</head>
+
+<body>
+  <nav id="nav_panel">
+    <div id="nav_wrap">
+      <div id="logo_side">
+        <a id="logo_imgs" href="/">
+          <img alt="פעילויות סמינר החדש אשדוד" src="assets/חדששש.jpg" id="bigger_logo" />
+
+        </a>
+      </div>
+
+      <div id="centarl_nav" class="header-txt">
+
+      <ul class="header-nav">
+        <li><a class="" href="tel:*5058" tabindex="0"><i class="fa fa-phone-square" style="margin:0 5px;"><span
+                class="invisible_text">טלפון</span></i>0737895034</a></li>
+
+          <!-- nav למעלה -->
+         
+          <li><a href="hello.html" tabindex="0">לדף הבית</a></li>
+
+          <li><a href="activities.html" tabindex="0">לפעילויות</a></li>
+
+          <li><a href="etnachta.html" tabindex="0">לאתנחתות </a></li>
+
+          <li><a href="information.html" tabindex="0">אודות</a></li>
+
+
+        </ul>
+
+      </div>
+
+
+    </div>
+  </nav>
+
+
+  <header id="green">
+    <h1>אודות הפעילויות</h1>
+</header>
+
+
+<main>
+  <div>
+   
+
+
+
+
+  <main id="mainPage">
+   
+    <h1>שאלות ותשובות</h1>
+    <p style="text-align: right;">השתדלנו להביא לכם פה תשובות לרוב השאלות שהורים ותלמידות שואלים אותנו בטלפון</p>
+    <p style="text-align: right;">תמיד נשמח לענות לכם על שאלות נוספות</p>
+
+  </main>
+  <h2 style="text-align: center;">יש לכם שאלות</h2>
+
+  <h1 style="text-align: center;
+   /* background-color: rgb(243, 243, 109); */
+  ">מקווים שתמצאו כאן את כל התשובות</h1>
+
+  <div id="aaa">
+    <button class="accordion">מה המחיר? מה כולל המחיר ? מה אינו כולל?
+    </button>
+    <div class="panel">
+      <p>המחיר הוא כפי שמופיע בדף המחנה
+        המחיר כולל נסיעות, אטרקציות ופעילויות במחנה, אוכל ושינה במחנה וכן כולל נסיעות.</p>
+    </div>
+
+    <button class="accordion">האם יש הנחות מיוחדות לאחיות?</button>
+    <div class="panel">
+      <p>כן</p>
+    </div>
+
+    <button class="accordion">בנות יב שלא חייבות להשתתף בכל האתנחתות, מה המחיר לכל אתנחתא? </button>
+    <div class="panel">
+      <p>המחיר הגלובאלי לכל האתנחתות הוא 150 שח, ולכל אתנחתא בודדת המחיר הוא 25 שח</p>
+    </div>
+    <button class="accordion">איזה אישורים צריך לצרף?</button>
+    <div class="panel">
+      <p>אישור הורים, אישור בריאות ותקנון</p>
+    </div>
+  </div>
+
+  <script>
+
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+  </script>
+<img src="assets/מבנה_סמינר/seminar.jpg" alt="" id="pic" style="width: 100%; height: 500px;">
+
+
+</body>
+
+<!-- <script src="script.js"></script> -->
+
+</html>

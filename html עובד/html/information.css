@@ -1,0 +1,181 @@
+#mainPage{
+    text-align: right;
+    margin: auto;
+    font-size: large;
+   
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+/* סגננו את הכפתורים המשמשים לפתיחה וסגירה של לוח האקורדיון */
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: right;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-size: x-large;
+  }
+  
+  p{
+    text-align: right;
+  }
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  /* הוסף צבע רקע לכפתור אם לוחצים עליו (הוסף את המחלקה .active עם JS), וכאשר אתה מעביר את העכבר מעליו (רחף) */
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  /* סגננו את פאנל האקורדיון. הערה: מוסתר כברירת מחדל */
+
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    font-size: large;
+    direction: rtl;
+  }
+
+
+/* אייקון +- */
+  .accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
+/* 
+#pic{
+
+  width: 350px;
+  height: 300px;
+} */
+
+main
+{
+ grid-column: 2;
+}
+
+#aaa{
+  font-size: 50px;
+  font-size: xx-large;
+  
+}
+
+  /* like */
+  .fa {
+    font-size: 50px;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .fa:hover {
+    color: darkblue;
+  }
+
+
+
+  body{
+    margin:0 ;
+    /* background-color: rgb(218, 213, 213); */
+    direction: rtl;
+}
+/* header{
+    display: flex;
+    align-items: center;
+    grid-row: 1;
+    grid-column-start: 1;
+    grid-column-end: 4; */
+    /* background: -webkit-radial-gradient(top, rgb(236, 129, 129),beige,rgb(115, 216, 241)); */
+
+
+    
+/* } */
+ /* header >figure{
+    
+   margin: 4px 10px;
+   flex-basis: 0;
+   flex-grow: 0;
+ 
+   
+}
+ 
+
+ header > h1{
+   flex-basis: 0;
+   flex-grow: 7.5;
+    text-align: center;
+} */
+
+/* nav{
+    direction: rtl;
+    font-size: x-large;
+    grid-row: 1;
+    grid-column: 1/4;
+  
+}  
+
+nav{
+    grid-row: 2;
+    grid-column: 1/4;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li{
+    flex-grow: 2;
+    text-align: center; */
+    /* background-color: rgb(238, 238, 165); */
+    /* color: black;
+} */
+/* 
+nav > ul > li:not(:last-child){
+    border-left: 1px white solid;
+}
+
+nav a{
+    color: black;
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+nav a:hover{
+    background-color: white;
+    color: rgb(224, 214, 216);
+}
+
+nav ul.drop-content{
+    flex-direction: column;
+   
+}
+
+.drop{
+    position: relative;
+}
+
+.drop:hover .drop-content{
+    display: block;
+}
+
+.drop-content{
+    display: none;
+    position: absolute;
+    width: 100%;
+} */

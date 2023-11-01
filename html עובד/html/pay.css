@@ -1,0 +1,54 @@
+
+/* 
+#userAndPassword {
+    border: rgb(2, 2, 3) solid 1.8px;
+    display: block;
+    justify-content: center;
+    width: 25%;
+    align-items: center;
+    margin-top: 10%;
+    margin-right: 37.5%;
+    padding: 1.5%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+} */
+
+
+.enter {
+    margin: 30px;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(209, 203, 203)
+
+}
+
+.ok{
+    margin: 30px;
+    align-items: center;
+    text-align: center;
+}
+
+#border{
+    padding: 0;
+    border: 3px black solid;
+    width: 500px;
+    height: 400px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 35%;
+    margin-right: 30%;
+    
+}
+
+h1{
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: xx-large;
+}
+
+#next{
+    font-size: x-large;
+    background-color: rgb(243, 243, 109);
+
+}
+

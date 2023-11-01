@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>כניסה למערכת</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="nav.css">
+    <script src="script.js"></script>
+    <script src="student.js"></script>
+</head>
+
+<body>
+
+    <div class="navbar">
+        <a href="hello.html" class="active"><i class="fa fa-fw fa-user"></i>דף הבית</a>
+        <a href="home2.html"><i class="fa fa-fw fa-home"></i>כניסה</a>
+        <a href="studentDetails.html"><i class="fa fa-fw fa-envelope"></i>הרשמה</a>
+        <a href="information.html"><i class="fa fa-fw fa-search"></i>אודות</a>
+    
+      </div>
+    
+
+    <button id="bbbt" onclick="document.getElementById('id01').style.display='block'">כניסה</button><br>
+
+    <button id="bbbt" onclick="connect()">הרשמה</button>
+
+    <!-- The Modal -->
+    <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close"
+            title="Close Modal">&times;</span>
+
+        <!-- Modal Content -->
+        <form class="modal-content animate" >
+            <div class="imgcontainer">
+                <img src="assets/סמל.png" style="width: 10%; height: 15%;" alt="Avatar" class="avatar">
+            </div>
+
+            <div class="container">
+                <label for="uname"><b>שם משתמש</b></label>
+                <input type="text" style="direction: rtl;" placeholder="הכנס שם משתמש" name="uname" required>
+
+                <label for="psw"><b>סיסמא</b></label>
+                <input type="password" style="direction: rtl;" placeholder="הכנס סיסמא" name="psw" required id="pass">
+
+                <button type="button" onclick="sendRequestStudent()">כניסה</button>
+
+                <!-- <button type="button" onclick="connect()">הרשמה</button> -->
+                <label>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+
+
+               
+            </div>
+            <div id="res"></div>
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                    class="cancelbtn" class="btn">ביטול</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>

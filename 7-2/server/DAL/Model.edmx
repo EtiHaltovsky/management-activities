@@ -1,0 +1,634 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="SchoolDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Activity">
+          <Key>
+            <PropertyRef Name="ActivityId" />
+          </Key>
+          <Property Name="ActivityId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ActivitiesName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="ActivitiesPlace" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="ActivitiesDate" Type="datetime" Nullable="false" />
+          <Property Name="Price" Type="float" />
+        </EntityType>
+        <EntityType Name="Camp">
+          <Key>
+            <PropertyRef Name="CampId" />
+          </Key>
+          <Property Name="CampId" Type="int" Nullable="false" />
+          <Property Name="Year" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Person">
+          <Key>
+            <PropertyRef Name="PersonId" />
+          </Key>
+          <Property Name="PersonId" Type="nvarchar" MaxLength="9" Nullable="false" />
+          <Property Name="FirstName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="LastName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Address" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="password" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Email" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Phone" Type="nvarchar" MaxLength="11" Nullable="false" />
+          <Property Name="Role" Type="nvarchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ShabessCamp">
+          <Key>
+            <PropertyRef Name="shabbesCampId" />
+          </Key>
+          <Property Name="shabbesCampId" Type="int" Nullable="false" />
+          <Property Name="TimeOfPrayInBeitKneset" Type="datetime" Nullable="false" />
+          <Property Name="Lecturers" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Year" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Students">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Age" Type="float" Nullable="false" />
+          <Property Name="FatherName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="MotherName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="ClassNum" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="Sister" Type="bit" Nullable="false" />
+          <Property Name="Pharm" Type="nvarchar" MaxLength="50" />
+          <Property Name="Id" Type="nvarchar" MaxLength="9" Nullable="false" />
+        </EntityType>
+        <EntityType Name="StudentToActivities">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ActivitiesId" Type="int" />
+          <Property Name="StudentId" Type="nvarchar" MaxLength="9" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Teacher">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Educator" Type="bit" Nullable="false" />
+          <Property Name="Id" Type="nvarchar" MaxLength="9" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TeachersToActivities">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TeacherId" Type="nvarchar" MaxLength="9" Nullable="false" />
+          <Property Name="ActivitiesId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Trip">
+          <Key>
+            <PropertyRef Name="TripId" />
+          </Key>
+          <Property Name="TripId" Type="int" Nullable="false" />
+          <Property Name="Guide" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="DurationOfTheTrip" Type="float" Nullable="false" />
+          <Property Name="Sites" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Buses" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Year" Type="int" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_Camp_ToActivity">
+          <End Role="Activity" Type="Self.Activity" Multiplicity="1" />
+          <End Role="Camp" Type="Self.Camp" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Activity">
+              <PropertyRef Name="ActivityId" />
+            </Principal>
+            <Dependent Role="Camp">
+              <PropertyRef Name="CampId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ShabessCamp_ToActivity">
+          <End Role="Activity" Type="Self.Activity" Multiplicity="1" />
+          <End Role="ShabessCamp" Type="Self.ShabessCamp" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Activity">
+              <PropertyRef Name="ActivityId" />
+            </Principal>
+            <Dependent Role="ShabessCamp">
+              <PropertyRef Name="shabbesCampId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Students_ToPerson">
+          <End Role="Person" Type="Self.Person" Multiplicity="1" />
+          <End Role="Students" Type="Self.Students" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Person">
+              <PropertyRef Name="PersonId" />
+            </Principal>
+            <Dependent Role="Students">
+              <PropertyRef Name="Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_StudentToActivities_ToActivity">
+          <End Role="Activity" Type="Self.Activity" Multiplicity="0..1" />
+          <End Role="StudentToActivities" Type="Self.StudentToActivities" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Activity">
+              <PropertyRef Name="ActivityId" />
+            </Principal>
+            <Dependent Role="StudentToActivities">
+              <PropertyRef Name="ActivitiesId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_StudentToActivities_ToStudent">
+          <End Role="Students" Type="Self.Students" Multiplicity="1" />
+          <End Role="StudentToActivities" Type="Self.StudentToActivities" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Students">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="StudentToActivities">
+              <PropertyRef Name="StudentId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Teacher_ToPerson">
+          <End Role="Person" Type="Self.Person" Multiplicity="1" />
+          <End Role="Teacher" Type="Self.Teacher" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Person">
+              <PropertyRef Name="PersonId" />
+            </Principal>
+            <Dependent Role="Teacher">
+              <PropertyRef Name="Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TeachersToActivities_ToActivity">
+          <End Role="Activity" Type="Self.Activity" Multiplicity="1" />
+          <End Role="TeachersToActivities" Type="Self.TeachersToActivities" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Activity">
+              <PropertyRef Name="ActivityId" />
+            </Principal>
+            <Dependent Role="TeachersToActivities">
+              <PropertyRef Name="ActivitiesId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TeachersToActivities_ToTeacher">
+          <End Role="Teacher" Type="Self.Teacher" Multiplicity="1" />
+          <End Role="TeachersToActivities" Type="Self.TeachersToActivities" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Teacher">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="TeachersToActivities">
+              <PropertyRef Name="TeacherId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Trip_ToActivity">
+          <End Role="Activity" Type="Self.Activity" Multiplicity="1" />
+          <End Role="Trip" Type="Self.Trip" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Activity">
+              <PropertyRef Name="ActivityId" />
+            </Principal>
+            <Dependent Role="Trip">
+              <PropertyRef Name="TripId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="SchoolDBModelStoreContainer">
+          <EntitySet Name="Activity" EntityType="Self.Activity" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Camp" EntityType="Self.Camp" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Person" EntityType="Self.Person" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ShabessCamp" EntityType="Self.ShabessCamp" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Students" EntityType="Self.Students" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="StudentToActivities" EntityType="Self.StudentToActivities" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Teacher" EntityType="Self.Teacher" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TeachersToActivities" EntityType="Self.TeachersToActivities" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Trip" EntityType="Self.Trip" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Camp_ToActivity" Association="Self.FK_Camp_ToActivity">
+            <End Role="Activity" EntitySet="Activity" />
+            <End Role="Camp" EntitySet="Camp" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ShabessCamp_ToActivity" Association="Self.FK_ShabessCamp_ToActivity">
+            <End Role="Activity" EntitySet="Activity" />
+            <End Role="ShabessCamp" EntitySet="ShabessCamp" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Students_ToPerson" Association="Self.FK_Students_ToPerson">
+            <End Role="Person" EntitySet="Person" />
+            <End Role="Students" EntitySet="Students" />
+          </AssociationSet>
+          <AssociationSet Name="FK_StudentToActivities_ToActivity" Association="Self.FK_StudentToActivities_ToActivity">
+            <End Role="Activity" EntitySet="Activity" />
+            <End Role="StudentToActivities" EntitySet="StudentToActivities" />
+          </AssociationSet>
+          <AssociationSet Name="FK_StudentToActivities_ToStudent" Association="Self.FK_StudentToActivities_ToStudent">
+            <End Role="Students" EntitySet="Students" />
+            <End Role="StudentToActivities" EntitySet="StudentToActivities" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Teacher_ToPerson" Association="Self.FK_Teacher_ToPerson">
+            <End Role="Person" EntitySet="Person" />
+            <End Role="Teacher" EntitySet="Teacher" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TeachersToActivities_ToActivity" Association="Self.FK_TeachersToActivities_ToActivity">
+            <End Role="Activity" EntitySet="Activity" />
+            <End Role="TeachersToActivities" EntitySet="TeachersToActivities" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TeachersToActivities_ToTeacher" Association="Self.FK_TeachersToActivities_ToTeacher">
+            <End Role="Teacher" EntitySet="Teacher" />
+            <End Role="TeachersToActivities" EntitySet="TeachersToActivities" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Trip_ToActivity" Association="Self.FK_Trip_ToActivity">
+            <End Role="Activity" EntitySet="Activity" />
+            <End Role="Trip" EntitySet="Trip" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="SchoolDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Activity">
+          <Key>
+            <PropertyRef Name="ActivityId" />
+          </Key>
+          <Property Name="ActivityId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ActivitiesName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ActivitiesPlace" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ActivitiesDate" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Price" Type="Double" />
+          <NavigationProperty Name="Camp" Relationship="Self.FK_Camp_ToActivity" FromRole="Activity" ToRole="Camp" />
+          <NavigationProperty Name="ShabessCamp" Relationship="Self.FK_ShabessCamp_ToActivity" FromRole="Activity" ToRole="ShabessCamp" />
+          <NavigationProperty Name="StudentToActivities" Relationship="Self.FK_StudentToActivities_ToActivity" FromRole="Activity" ToRole="StudentToActivities" />
+          <NavigationProperty Name="TeachersToActivities" Relationship="Self.FK_TeachersToActivities_ToActivity" FromRole="Activity" ToRole="TeachersToActivities" />
+          <NavigationProperty Name="Trip" Relationship="Self.FK_Trip_ToActivity" FromRole="Activity" ToRole="Trip" />
+        </EntityType>
+        <EntityType Name="Camp">
+          <Key>
+            <PropertyRef Name="CampId" />
+          </Key>
+          <Property Name="CampId" Type="Int32" Nullable="false" />
+          <Property Name="Year" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Activity" Relationship="Self.FK_Camp_ToActivity" FromRole="Camp" ToRole="Activity" />
+        </EntityType>
+        <EntityType Name="Person">
+          <Key>
+            <PropertyRef Name="PersonId" />
+          </Key>
+          <Property Name="PersonId" Type="String" MaxLength="9" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="LastName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Address" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Phone" Type="String" MaxLength="11" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Role" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Student" Relationship="Self.FK_Students_ToPerson" FromRole="Person" ToRole="Students" />
+          <NavigationProperty Name="Teacher" Relationship="Self.FK_Teacher_ToPerson" FromRole="Person" ToRole="Teacher" />
+        </EntityType>
+        <EntityType Name="ShabessCamp">
+          <Key>
+            <PropertyRef Name="shabbesCampId" />
+          </Key>
+          <Property Name="shabbesCampId" Type="Int32" Nullable="false" />
+          <Property Name="TimeOfPrayInBeitKneset" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Lecturers" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Year" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Activity" Relationship="Self.FK_ShabessCamp_ToActivity" FromRole="ShabessCamp" ToRole="Activity" />
+        </EntityType>
+        <EntityType Name="Student">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Age" Type="Double" Nullable="false" />
+          <Property Name="FatherName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MotherName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ClassNum" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Sister" Type="Boolean" Nullable="false" />
+          <Property Name="Pharm" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Id" Type="String" MaxLength="9" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Person" Relationship="Self.FK_Students_ToPerson" FromRole="Students" ToRole="Person" />
+          <NavigationProperty Name="StudentToActivities" Relationship="Self.FK_StudentToActivities_ToStudent" FromRole="Students" ToRole="StudentToActivities" />
+        </EntityType>
+        <EntityType Name="StudentToActivity">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ActivitiesId" Type="Int32" />
+          <Property Name="StudentId" Type="String" MaxLength="9" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Activity" Relationship="Self.FK_StudentToActivities_ToActivity" FromRole="StudentToActivities" ToRole="Activity" />
+          <NavigationProperty Name="Student" Relationship="Self.FK_StudentToActivities_ToStudent" FromRole="StudentToActivities" ToRole="Students" />
+        </EntityType>
+        <EntityType Name="Teacher">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Educator" Type="Boolean" Nullable="false" />
+          <Property Name="Id" Type="String" MaxLength="9" FixedLength="false" Unicode="true" Nullable="false" />
+          <NavigationProperty Name="Person" Relationship="Self.FK_Teacher_ToPerson" FromRole="Teacher" ToRole="Person" />
+          <NavigationProperty Name="TeachersToActivities" Relationship="Self.FK_TeachersToActivities_ToTeacher" FromRole="Teacher" ToRole="TeachersToActivities" />
+        </EntityType>
+        <EntityType Name="TeachersToActivity">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TeacherId" Type="String" MaxLength="9" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ActivitiesId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Activity" Relationship="Self.FK_TeachersToActivities_ToActivity" FromRole="TeachersToActivities" ToRole="Activity" />
+          <NavigationProperty Name="Teacher" Relationship="Self.FK_TeachersToActivities_ToTeacher" FromRole="TeachersToActivities" ToRole="Teacher" />
+        </EntityType>
+        <EntityType Name="Trip">
+          <Key>
+            <PropertyRef Name="TripId" />
+          </Key>
+          <Property Name="TripId" Type="Int32" Nullable="false" />
+          <Property Name="Guide" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DurationOfTheTrip" Type="Double" Nullable="false" />
+          <Property Name="Sites" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Buses" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Year" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Activity" Relationship="Self.FK_Trip_ToActivity" FromRole="Trip" ToRole="Activity" />
+        </EntityType>
+        <Association Name="FK_Camp_ToActivity">
+          <End Role="Activity" Type="Self.Activity" Multiplicity="1" />
+          <End Role="Camp" Type="Self.Camp" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Activity">
+              <PropertyRef Name="ActivityId" />
+            </Principal>
+            <Dependent Role="Camp">
+              <PropertyRef Name="CampId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_ShabessCamp_ToActivity">
+          <End Role="Activity" Type="Self.Activity" Multiplicity="1" />
+          <End Role="ShabessCamp" Type="Self.ShabessCamp" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Activity">
+              <PropertyRef Name="ActivityId" />
+            </Principal>
+            <Dependent Role="ShabessCamp">
+              <PropertyRef Name="shabbesCampId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_StudentToActivities_ToActivity">
+          <End Role="Activity" Type="Self.Activity" Multiplicity="0..1" />
+          <End Role="StudentToActivities" Type="Self.StudentToActivity" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Activity">
+              <PropertyRef Name="ActivityId" />
+            </Principal>
+            <Dependent Role="StudentToActivities">
+              <PropertyRef Name="ActivitiesId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TeachersToActivities_ToActivity">
+          <End Role="Activity" Type="Self.Activity" Multiplicity="1" />
+          <End Role="TeachersToActivities" Type="Self.TeachersToActivity" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Activity">
+              <PropertyRef Name="ActivityId" />
+            </Principal>
+            <Dependent Role="TeachersToActivities">
+              <PropertyRef Name="ActivitiesId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Trip_ToActivity">
+          <End Role="Activity" Type="Self.Activity" Multiplicity="1" />
+          <End Role="Trip" Type="Self.Trip" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Activity">
+              <PropertyRef Name="ActivityId" />
+            </Principal>
+            <Dependent Role="Trip">
+              <PropertyRef Name="TripId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Students_ToPerson">
+          <End Role="Person" Type="Self.Person" Multiplicity="1" />
+          <End Role="Students" Type="Self.Student" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Person">
+              <PropertyRef Name="PersonId" />
+            </Principal>
+            <Dependent Role="Students">
+              <PropertyRef Name="Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Teacher_ToPerson">
+          <End Role="Person" Type="Self.Person" Multiplicity="1" />
+          <End Role="Teacher" Type="Self.Teacher" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Person">
+              <PropertyRef Name="PersonId" />
+            </Principal>
+            <Dependent Role="Teacher">
+              <PropertyRef Name="Id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_StudentToActivities_ToStudent">
+          <End Role="Students" Type="Self.Student" Multiplicity="1" />
+          <End Role="StudentToActivities" Type="Self.StudentToActivity" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Students">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="StudentToActivities">
+              <PropertyRef Name="StudentId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TeachersToActivities_ToTeacher">
+          <End Role="Teacher" Type="Self.Teacher" Multiplicity="1" />
+          <End Role="TeachersToActivities" Type="Self.TeachersToActivity" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Teacher">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="TeachersToActivities">
+              <PropertyRef Name="TeacherId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="SchoolDBEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Activities" EntityType="Self.Activity" />
+          <EntitySet Name="Camps" EntityType="Self.Camp" />
+          <EntitySet Name="People" EntityType="Self.Person" />
+          <EntitySet Name="ShabessCamps" EntityType="Self.ShabessCamp" />
+          <EntitySet Name="Students" EntityType="Self.Student" />
+          <EntitySet Name="StudentToActivities" EntityType="Self.StudentToActivity" />
+          <EntitySet Name="Teachers" EntityType="Self.Teacher" />
+          <EntitySet Name="TeachersToActivities" EntityType="Self.TeachersToActivity" />
+          <EntitySet Name="Trips" EntityType="Self.Trip" />
+          <AssociationSet Name="FK_Camp_ToActivity" Association="Self.FK_Camp_ToActivity">
+            <End Role="Activity" EntitySet="Activities" />
+            <End Role="Camp" EntitySet="Camps" />
+          </AssociationSet>
+          <AssociationSet Name="FK_ShabessCamp_ToActivity" Association="Self.FK_ShabessCamp_ToActivity">
+            <End Role="Activity" EntitySet="Activities" />
+            <End Role="ShabessCamp" EntitySet="ShabessCamps" />
+          </AssociationSet>
+          <AssociationSet Name="FK_StudentToActivities_ToActivity" Association="Self.FK_StudentToActivities_ToActivity">
+            <End Role="Activity" EntitySet="Activities" />
+            <End Role="StudentToActivities" EntitySet="StudentToActivities" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TeachersToActivities_ToActivity" Association="Self.FK_TeachersToActivities_ToActivity">
+            <End Role="Activity" EntitySet="Activities" />
+            <End Role="TeachersToActivities" EntitySet="TeachersToActivities" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Trip_ToActivity" Association="Self.FK_Trip_ToActivity">
+            <End Role="Activity" EntitySet="Activities" />
+            <End Role="Trip" EntitySet="Trips" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Students_ToPerson" Association="Self.FK_Students_ToPerson">
+            <End Role="Person" EntitySet="People" />
+            <End Role="Students" EntitySet="Students" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Teacher_ToPerson" Association="Self.FK_Teacher_ToPerson">
+            <End Role="Person" EntitySet="People" />
+            <End Role="Teacher" EntitySet="Teachers" />
+          </AssociationSet>
+          <AssociationSet Name="FK_StudentToActivities_ToStudent" Association="Self.FK_StudentToActivities_ToStudent">
+            <End Role="Students" EntitySet="Students" />
+            <End Role="StudentToActivities" EntitySet="StudentToActivities" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TeachersToActivities_ToTeacher" Association="Self.FK_TeachersToActivities_ToTeacher">
+            <End Role="Teacher" EntitySet="Teachers" />
+            <End Role="TeachersToActivities" EntitySet="TeachersToActivities" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="SchoolDBModelStoreContainer" CdmEntityContainer="SchoolDBEntities">
+          <EntitySetMapping Name="Activities">
+            <EntityTypeMapping TypeName="SchoolDBModel.Activity">
+              <MappingFragment StoreEntitySet="Activity">
+                <ScalarProperty Name="ActivityId" ColumnName="ActivityId" />
+                <ScalarProperty Name="ActivitiesName" ColumnName="ActivitiesName" />
+                <ScalarProperty Name="ActivitiesPlace" ColumnName="ActivitiesPlace" />
+                <ScalarProperty Name="ActivitiesDate" ColumnName="ActivitiesDate" />
+                <ScalarProperty Name="Price" ColumnName="Price" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Camps">
+            <EntityTypeMapping TypeName="SchoolDBModel.Camp">
+              <MappingFragment StoreEntitySet="Camp">
+                <ScalarProperty Name="CampId" ColumnName="CampId" />
+                <ScalarProperty Name="Year" ColumnName="Year" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="People">
+            <EntityTypeMapping TypeName="SchoolDBModel.Person">
+              <MappingFragment StoreEntitySet="Person">
+                <ScalarProperty Name="PersonId" ColumnName="PersonId" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="Address" ColumnName="Address" />
+                <ScalarProperty Name="password" ColumnName="password" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Phone" ColumnName="Phone" />
+                <ScalarProperty Name="Role" ColumnName="Role" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ShabessCamps">
+            <EntityTypeMapping TypeName="SchoolDBModel.ShabessCamp">
+              <MappingFragment StoreEntitySet="ShabessCamp">
+                <ScalarProperty Name="shabbesCampId" ColumnName="shabbesCampId" />
+                <ScalarProperty Name="TimeOfPrayInBeitKneset" ColumnName="TimeOfPrayInBeitKneset" />
+                <ScalarProperty Name="Lecturers" ColumnName="Lecturers" />
+                <ScalarProperty Name="Year" ColumnName="Year" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Students">
+            <EntityTypeMapping TypeName="SchoolDBModel.Student">
+              <MappingFragment StoreEntitySet="Students">
+                <ScalarProperty Name="Age" ColumnName="Age" />
+                <ScalarProperty Name="FatherName" ColumnName="FatherName" />
+                <ScalarProperty Name="MotherName" ColumnName="MotherName" />
+                <ScalarProperty Name="ClassNum" ColumnName="ClassNum" />
+                <ScalarProperty Name="Sister" ColumnName="Sister" />
+                <ScalarProperty Name="Pharm" ColumnName="Pharm" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="StudentToActivities">
+            <EntityTypeMapping TypeName="SchoolDBModel.StudentToActivity">
+              <MappingFragment StoreEntitySet="StudentToActivities">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="ActivitiesId" ColumnName="ActivitiesId" />
+                <ScalarProperty Name="StudentId" ColumnName="StudentId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Teachers">
+            <EntityTypeMapping TypeName="SchoolDBModel.Teacher">
+              <MappingFragment StoreEntitySet="Teacher">
+                <ScalarProperty Name="Educator" ColumnName="Educator" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TeachersToActivities">
+            <EntityTypeMapping TypeName="SchoolDBModel.TeachersToActivity">
+              <MappingFragment StoreEntitySet="TeachersToActivities">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="TeacherId" ColumnName="TeacherId" />
+                <ScalarProperty Name="ActivitiesId" ColumnName="ActivitiesId" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Trips">
+            <EntityTypeMapping TypeName="SchoolDBModel.Trip">
+              <MappingFragment StoreEntitySet="Trip">
+                <ScalarProperty Name="TripId" ColumnName="TripId" />
+                <ScalarProperty Name="Guide" ColumnName="Guide" />
+                <ScalarProperty Name="DurationOfTheTrip" ColumnName="DurationOfTheTrip" />
+                <ScalarProperty Name="Sites" ColumnName="Sites" />
+                <ScalarProperty Name="Buses" ColumnName="Buses" />
+                <ScalarProperty Name="Year" ColumnName="Year" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,36 @@
+/* #passMan{
+    width: 300px;
+    height: 300px;
+    border: black solid 2px;
+    text-align: center;
+    padding-top: 120px;
+    font-size: x-large;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+} */
+
+
+#pa{
+    text-align: center;
+    font-size: xx-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 15%;
+    margin-left: 18%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+#passw{
+    text-align: right;
+    display: grid;
+    margin-right:550px;
+   
+}
+
+#btnpass{
+    font-size: x-large;
+    background-color: rgb(243, 243, 109);
+}
+

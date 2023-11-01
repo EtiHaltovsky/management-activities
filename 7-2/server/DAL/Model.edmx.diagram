@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="2825c0a4ebd442129f560b458f640b42" Name="Diagram1">
+        <EntityTypeShape EntityType="SchoolDBModel.Activity" Width="1.5" PointX="0.75" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SchoolDBModel.Camp" Width="1.5" PointX="3" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SchoolDBModel.Person" Width="1.5" PointX="1.5" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SchoolDBModel.ShabessCamp" Width="1.5" PointX="3" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SchoolDBModel.Student" Width="1.5" PointX="0.75" PointY="11.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SchoolDBModel.StudentToActivity" Width="1.5" PointX="3" PointY="11.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SchoolDBModel.Teacher" Width="1.5" PointX="3.75" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SchoolDBModel.TeachersToActivity" Width="1.5" PointX="6" PointY="8.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SchoolDBModel.Trip" Width="1.5" PointX="3" PointY="15.875" IsExpanded="true" />
+        <AssociationConnector Association="SchoolDBModel.FK_Camp_ToActivity" ManuallyRouted="false" />
+        <AssociationConnector Association="SchoolDBModel.FK_ShabessCamp_ToActivity" ManuallyRouted="false" />
+        <AssociationConnector Association="SchoolDBModel.FK_StudentToActivities_ToActivity" ManuallyRouted="false" />
+        <AssociationConnector Association="SchoolDBModel.FK_TeachersToActivities_ToActivity" ManuallyRouted="false" />
+        <AssociationConnector Association="SchoolDBModel.FK_Trip_ToActivity" ManuallyRouted="false" />
+        <AssociationConnector Association="SchoolDBModel.FK_Students_ToPerson" ManuallyRouted="false" />
+        <AssociationConnector Association="SchoolDBModel.FK_Teacher_ToPerson" ManuallyRouted="false" />
+        <AssociationConnector Association="SchoolDBModel.FK_StudentToActivities_ToStudent" ManuallyRouted="false" />
+        <AssociationConnector Association="SchoolDBModel.FK_TeachersToActivities_ToTeacher" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

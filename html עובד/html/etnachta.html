@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>אתנחתא</title>
+    <link rel="stylesheet" href="etnachta.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="shortcut icon" href="assets/סמל.png" type="image/png">
+    <link rel="stylesheet" href="hello.css">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="page.css">
+    <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="bootstrap.css">
+
+    <script type="text/javascript" src="https://unpkg.com/xlsx@0.15.1/dist/xlsx.full.min.js"></script>
+    <script src="script.js"></script>
+
+
+</head>
+
+<body onload="buildActivity()">
+
+
+    <div id="back"></div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+    <nav id="nav_panel">
+        <div id="nav_wrap">
+            <div id="logo_side">
+                <a id="logo_imgs" href="/">
+                    <img alt="פעילויות סמינר החדש אשדוד" src="assets/חדששש.jpg" id="bigger_logo" />
+
+
+                </a>
+            </div>
+
+            <div id="centarl_nav" class="header-txt">
+                <!-- <ul class="header-lang-nav" style="display:none;">
+                <li><a href="/">HEB</a></li>
+                <li><a href="/en">ENG</a></li>
+                <li><a href="/ru">RUS</a></li>
+            </ul> -->
+                <ul class="header-nav">
+                    <li><a class="" href="tel:*5058" tabindex="0"><i class="fa fa-phone-square"
+                                style="margin:0 5px;"><span class="invisible_text">טלפון</span></i>0737895034</a></li>
+
+
+                    <!-- nav למעלה -->
+                    <li><a href="hello.html" tabindex="0">לדף הבית</a></li>
+
+                    <!-- <li><a href="managerUpdates.html" tabindex="0">לדף קודם</a></li> -->
+
+                    <li><a href="activities.html" tabindex="0">לפעילויות</a></li>
+
+                    <!-- <li><a href="etnachta.html" tabindex="0">לאתנחתות </a></li> -->
+
+                    <li><a href="information.html" tabindex="0">אודות</a></li>
+
+                    <li><a href="hello.html" tabindex="0" onclick="out()">התנתק</a></li>
+                    <!-- <li><a href="hello.html"><i class="fa fa-fw fa-search" onclick="out()"></i>התנתק</a></li> -->
+
+                </ul>
+
+            </div>
+
+    </nav>
+   
+    <div id="box">
+
+
+        <!-- <button type="button" id="trip" onclick="addEtnachta(8)">טיול</button>
+        <button type="button" id="Fair" onclick="addEtnachta(1)">יריד</button>
+        <button type="button" id="waterPark" onclick="addEtnachta(2)">חפץ חיים</button>
+        <button type="button" id="movie" onclick="addEtnachta(3)">סרט</button>
+        <button type="button" id="hakotel" onclick="addEtnachta(4)">נסיעה לירושלים</button>
+        <button type="button" id="sing" onclick="addEtnachta(5)">שירה על הים</button>
+        <button type="button" id="dance" onclick="addEtnachta(6)">הרקדה</button>
+        <button type="button" id="carting" onclick="addEtnachta(7)">קארטינג</button> -->
+    </div>
+    <button type="button" id="select" onclick="ShowAllActivities()">לפרטי הפעילויות</button>
+
+    <br>
+    <br>  
+    <br> 
+    <br>
+    <br>
+    <a href="etnachtaPay.html"><input type="button" value="לתשלום" id="see"></a>
+
+ 
+    <script src="activities.js"></script>
+
+    <script src="student.js"></script>
+
+</body>
+
+</html>
